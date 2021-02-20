@@ -1,0 +1,39 @@
+"""
+File: pred.py 
+-------------------
+This program utilizes the trained model to make predictions.  
+"""
+
+import pickle 
+import gzip 
+
+def load_model():
+	'''load in pickled model'''
+	in_file = gzip.open('compressed_model.pkl', 'rb')
+	global loaded_model
+	loaded_model = pickle.load(in_file)
+	in_file.close()
+
+
+def predict_text(txt):
+	"""
+	This function uses the loaded model to classify a sequence of text. 
+	Parameters:
+		- txt: the sequence of text to be classified
+	Returns:
+		- r_string: a statement displaying the classification and probability
+	""" 
+
+	load_model()
+
+	# evaluate a sample
+	evaluation = loaded_model.classify(txt)
+
+	# get probability of the evaluation 
+	get_prob = loaded_model.prob_classify(txt)
+	prob = round((get_prob.prob(evaluation) * 100))
+
+	# build string to be returned 
+	r_string = (str(prob) + "% " + evaluation)
+
+	return r_string
