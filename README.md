@@ -6,7 +6,7 @@ This program classifies a sequence of text as either "partisan" or "neutral" usi
 
 ## Model and data
 
-The trained model is stored as pickled file in `compressed_model.pkl`.  Note that the intitial model training was done as part of an extension project for my computer science class. Therefore, I cannot release the code where the model was trained. In short, the model is a Naive Bayes Classifier trained on `data/train.csv` and evaluated on `data/test.csv`. The Textblob library was used. The original data was adapted from [here](https://www.kaggle.com/crowdflower/political-social-media-posts) and was manually preprocessed. 
+The trained model is stored as a pickled file in `compressed_model.pkl`.  Note that the intitial model training was done as part of an extension project for my computer science class. Therefore, I cannot release the code where the model was trained. In short, the model is a Naive Bayes Classifier trained on `data/train.csv` and evaluated on `data/test.csv`. The Textblob library was used. The original data was adapted from [here](https://www.kaggle.com/crowdflower/political-social-media-posts) and was manually preprocessed. 
 
 ## Running instructions
 
