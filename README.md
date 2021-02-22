@@ -2,7 +2,7 @@
 
 ## Summary
 
-This program classifies a sequence of text as either "partisan" or "neutral" using a machine learning and sentiment analysis. 
+This program classifies a sequence of text as either "partisan" or "neutral" using machine learning and sentiment analysis. 
 
 ## Model and data
 
