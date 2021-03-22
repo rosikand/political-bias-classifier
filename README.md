@@ -6,7 +6,7 @@ This program classifies a sequence of text as either "partisan" or "neutral" usi
 
 ## Model and data
 
-The trained model is stored as a pickled file in `compressed_trained_model.pklz`.  Note that the intitial model training was done as part of an extension project for my computer science class. Therefore, I cannot release the code where the model was trained. In short, the model is a Naive Bayes Classifier trained on `data/train.csv` and evaluated on `data/test.csv`. The Textblob library was used. The original data was adapted from [here](https://www.kaggle.com/crowdflower/political-social-media-posts) and was manually preprocessed. The `pred.py` file holds a function `predict_text` that is utilized in the runner files which loads the model, processes the inputted text, and returns the result. 
+The trained model is stored as a pickled file in `compressed_trained_model.pklz` which is 85.6 MB and can be downloaded at this [link](https://drive.google.com/file/d/1-GpghIfWqZcTR-KNek-Jj2T3pKzVbgE_/view?usp=sharing).  Note that the intitial model training was done as part of an extension project for my computer science class. Therefore, I cannot release the code where the model was trained. In short, the model is a Naive Bayes Classifier trained on `data/train.csv` and evaluated on `data/test.csv`. The Textblob library was used. The original data was adapted from [here](https://www.kaggle.com/crowdflower/political-social-media-posts) and was manually preprocessed. The `pred.py` file holds a function `predict_text` that is utilized in the runner files which loads the model, processes the inputted text, and returns the result. 
 
 ## Running instructions
 
@@ -16,7 +16,8 @@ If you would like to run this program on your local computer, please download/cl
 
 1. Install the necessary dependencies: `$ pip install -r requirements.txt`. 
 2. Install Textblob's corpora: `$ python -m textblob.download_corpora`. 
-3. Run `run.py` (`$ python run.py`) and follow the directions within the program. 
+3. Download the model file from this [link](https://drive.google.com/file/d/1-GpghIfWqZcTR-KNek-Jj2T3pKzVbgE_/view?usp=sharing) and save it in the same directory where you cloned the repository. 
+4. Run `run.py` (`$ python run.py`) and follow the directions within the program. 
 
 ## Web application
 
