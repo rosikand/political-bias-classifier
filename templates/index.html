@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        .footer-link {
+            text-decoration: none; 
+            color: inherit
+        }
+
+        .footer-link:hover {
+            color: #0074D9;
+        }
+    </style>
+    <title>Political Bias Classifier</title>
+</head>
+<body>
+    <br>
+    <br>
+    <img class="image-center" src="../static/banner.png"/>
+    <h3 style="text-align: center;">Demo web app</h3>
+    <p class="center">This is a demo of my political bias classier program. It allows you run the program right here in the browser. Simply type in a sequence of text in the box below, hit submit, and wait until the output is shown. The output tells if the input text is partisan or neutral along with a percentage value. Be warned though, since the machine learning model is quite large (> 200GB), it does some time for the model process the input. Enjoy!</p>
+<br> 
+
+<div class='center' style="border: 1px solid #990000;">
+
+    <!-- Get input from the user -->
+    <form method="POST">
+        <textarea rows="4" cols="50" name="text"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+  </div>
+
+<div class="center">
+    <p>Made by <a class='footer-link' href="https://rosikand.github.io/" target="_BLANK">Rohan Sikand</a> &middot; <a class='footer-link' href="https://github.com/rosikand/political-bias-classifier" target="_BLANK">Source</a> &middot; Powered by <a class='footer-link' href="https://www.pythonanywhere.com/" target="_BLANK">pythonanywhere</a></p>
+</div>
+
+</body>
+</html>
