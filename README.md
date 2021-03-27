@@ -1,4 +1,4 @@
-![header image](https://drive.google.com/uc?export=download&id=1tbbhZWk__GcjI8lExRTdX-jrhItqKOo4)
+![header image](static/banner.png)
 
 ## Summary
 
