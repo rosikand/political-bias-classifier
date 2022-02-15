@@ -23,5 +23,5 @@ If you would like to run this program on your local computer, please download/cl
 
 Like mentioned, you can use the program through the web at [politicalbias.pythonanywhere.com](http://politicalbias.pythonanywhere.com/). The application was built using Flask which essentially allows the user inputted text to be stored in a Python string variable. This string is then sent into the model which processes the result. The result is then shown by rendering an new HTML document. In terms of files, the Flask app was built in `app.py`, the `static` subdirectory was used to store the banner image, and the `templates` subdirectory holds the HTML documents that are rendered through the Flask app routing.  The web application is hosted on [pythonanywhere](https://www.pythonanywhere.com/). Note that the `index.html` in this main directory is just used for routing from my personal website domain through Github Pages. Visual: 
 
-<img width="805" alt="image" src="https://user-images.githubusercontent.com/57341225/154161295-6db1446c-1788-4c9f-b32a-bd765b6c6f0c.png">
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/57341225/154161335-7f3fd7eb-12e1-4491-921d-5ec5e32b34cb.png">
 
